@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- HEAD - Encabezados de la pagina -->
+<head>
+    <!-- Codificacion -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link a los estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Titulo de la pagina -->
+    <title>Portfolio Emiliano Celleri</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<!-- BODY Cuerpo de la pagina -->
+<body>
+    
+    <!-- Nav bar -->
+    <nav>
+        <ul>
+            <li><a href="#top">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre Mi</a></li>
+            <li><a href="#tecnologias">Tecnologías</a></li>
+            <li><a href="#contacto">Contactame</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-image">
+        <img src="./css/images/hero-image.webp" alt="">
+    </div>
+
+    <!-- Section Sobre Mi -->
+
+    <section class="sobre-mi" id="sobre-mi">
+        <div class="contenedor">
+            <p>Sobre Mi</p>
+            <p class="descripcion">
+                Soy un apasionado de la programación y un pensador analítico. Siempre busco formas eficientes de resolver problemas. Considero que mis habilidades y mentalidad practica dejarían un valor agregado palpable en desarrollos de software desafiantes. Me emociona ser parte de la transformación digital de las organizaciones y contribuir con mi grano de arena en proyectos innovadores.
+            </p>
+        </div>
+    </section>
+    
+
+    <!-- Section de tecnologias -->
+    
+    <section class="tecnologias" id="tecnologias">
+        
+        <p>Tecnologicas que conozco</p>
+        
+        <table class="tabla">
+            
+            <tr> 
+                <th>Tecnologia</th>
+                <th>Tipo</th>
+                <th>Conocimiento</th>
+            </tr>
+
+            <tr>
+                <td>Python</td>
+                <td>Lenguaje</td>
+                <td>8</td>
+            </tr>
+
+            <tr>
+                <td>C#</td>
+                <td>Lenguaje</td>
+                <td>7</td>
+            </tr>
+
+            <tr>
+                <td>Django</td>
+                <td>Framework</td>
+                <td>8</td>
+            </tr>
+
+            <tr>
+                <td>Kotlin</td>
+                <td>Lenguaje</td>
+                <td>6</td>
+            </tr>
+        </table>
+
+    </section>
+    
+
+    <!-- Section de contacto -->
+    <section class="contacto" id="contacto">
+
+    <form class="contact">
+        <p>Contactame!</p>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre">
+
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" id="apellido">
+
+        <label for="celular">Celular</label>
+        <input type="tel" name="celular" id="celular">
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+
+        <button type="submit" class="Enviar">
+            <i class="fas fa-paper-plane"></i>Enviar</button>
+    </form>    
+    </section>
+    
+    
+    <footer class="footer">
+        <p>Mis Redes</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/emiliano-celleri" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/EmilianoCelleri" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <p>© 2024 Emiliano Celleri. Tecnicatura Superior en Desarrollo de Software.</p>
+    </footer>
+    
+
+
+</body>
+</html>

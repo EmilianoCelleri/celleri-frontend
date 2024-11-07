@@ -1,0 +1,345 @@
+/* Nav Bar */
+
+body{
+    font-family: 'Ubuntu';
+    margin: 0;
+    font-size: 16px;
+    background-color: black;
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+
+
+nav ul li {
+    font-size: 1.3rem;
+    margin-left: 1rem; 
+}
+
+nav a {
+    color:chartreuse;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: lime;
+    text-shadow: 4px 4px 10px aliceblue; 
+}
+
+
+.hero-image {
+    height: 80vh; 
+    background-size: cover;
+    position:relative;
+}
+
+.hero-image img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    clip-path: circle(50% at 50% 50%);
+
+}
+
+.hero-image img:hover{
+    filter: grayscale(0%);
+}
+
+.contact{
+    max-width: 60%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid chartreuse;
+    border-radius: 1rem;
+    margin: 0 auto;
+}
+
+.sobre-mi {
+    padding: 10px;
+    max-width: 70%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid chartreuse;
+    border-radius: 1rem;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+
+.descripcion{
+    font-size: 1.5rem;
+}
+
+.contact label {
+    font-size: 1.5rem;
+    color: chartreuse;
+}
+
+.contact label:hover{
+    text-shadow: 4px 4px 10px aliceblue;
+}
+
+.contact input:hover{
+    box-shadow: 4px 4px 10px chartreuse;
+}
+
+p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 5px 5px 10px aliceblue;
+    color: chartreuse;
+    font-size: 2rem;
+}
+
+.contact input {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    
+}
+
+.contact button {
+    width: 100px;
+    padding: 12px;
+    background-color: chartreuse;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 15px;
+}
+
+
+/* Filas pares */
+tr:nth-child(even) {
+    background-color: chartreuse;
+}
+/* Filas impares */
+tr:nth-child(odd) {
+    background-color: lime;
+
+}
+
+.tecnologias {
+    margin: 20px;
+}
+
+.tecnologias p {
+    font-size: 2rem;
+    color:chartreuse;
+    margin-bottom: 10px;
+}
+
+.tabla {
+    width: 60%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.tabla th,
+.tabla td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.tabla th {
+    background-color: #4caf50;
+    color: white;
+
+}
+
+.tabla tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tabla tr:nth-child(odd) {
+    background-color: #e9f5e9;
+}
+
+.tabla tr:hover {
+    background-color: #d4eadd;
+    box-shadow: 0 0 0 2px chartreuse;
+}
+
+.tabla td {
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+.tabla th:first-child,
+.tabla td:first-child {
+    border-top-left-radius: 5px;
+}
+
+.tabla th:last-child,
+.tabla td:last-child {
+    border-top-right-radius: 5px;
+}
+
+
+.footer {
+    background-color: #111;
+    color: chartreuse;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid chartreuse;
+    margin-top: 40px;
+}
+
+.footer .social-icons {
+    margin: 10px 0;
+}
+
+.footer .social-icons a {
+    color: chartreuse;
+    font-size: 2rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    color: #fff;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+
+/* Tablet horizontal */
+@media (max-width: 1080px) {
+    
+    .sobre-mi p,
+    .tecnologias p,
+    .contacto p {
+        font-size: 1.8rem;
+    }
+
+    
+    .contenedor {
+        padding: 20px;
+    }
+
+    
+    .contacto input,
+    .contacto button {
+        width: 80%;
+    }
+}
+
+/* Tablet vertical */
+@media (max-width: 768px) {
+    
+    .sobre-mi p,
+    .tecnologias p,
+    .contacto p {
+        font-size: 1.5rem;
+    }
+
+    
+    .tabla {
+        font-size: 0.9rem;
+    }
+
+    
+    .contenedor {
+        padding: 15px;
+    }
+
+    
+    .contacto input,
+    .contacto button {
+        width: 90%;
+    }
+}
+
+/* Mobil 1 */
+@media (max-width: 480px) {
+    
+    .sobre-mi p,
+    .tecnologias p,
+    .contacto p {
+        font-size: 1.2rem;
+    }
+
+    
+    .contenedor {
+        padding: 10px;
+        text-align: center;
+    }
+
+    
+    .contacto input,
+    .contacto button {
+        width: 100%;
+    }
+
+    
+    .tecnologias .tabla {
+        font-size: 0.8rem;
+    }
+}
+
+/* Mobil 2 */
+@media (max-width: 375px) {
+    
+    .sobre-mi p,
+    .tecnologias p,
+    .contacto p {
+        font-size: 1rem;
+    }
+
+    
+    .contenedor {
+        padding: 8px;
+        text-align: center;
+    }
+
+    
+    .contacto input,
+    .contacto button {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    
+    .tecnologias .tabla {
+        font-size: 0.75rem;
+    }
+}
